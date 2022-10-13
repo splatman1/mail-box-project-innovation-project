@@ -1,5 +1,6 @@
 from post_office import PostOffice
 
+
 class Charlie:
     def __init__(self, letter=None):
         self.letter = letter

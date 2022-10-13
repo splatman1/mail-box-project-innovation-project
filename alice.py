@@ -1,5 +1,7 @@
 from letter import Letter
 from post_office import PostOffice
+
+
 class Alice:
     def __init__(self, letter_box, letter=None):
         self.letter_box = letter_box
