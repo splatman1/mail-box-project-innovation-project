@@ -7,6 +7,7 @@ class Charlie:
 
     def collect_letter(self, post_office):
         self.letter = PostOffice.take_letter(post_office)
+        print("Letter has been collected")
     def check_flag_position(self, destination):
         if destination.flag_up:
             print("This letter box already contains a letter")
@@ -15,4 +16,5 @@ class Charlie:
 
     def deliver_letter(self, destination):
         destination.insert_letter(self.letter)
+        print("Letter has been delivered")
 
