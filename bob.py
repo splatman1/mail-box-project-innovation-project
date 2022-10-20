@@ -7,7 +7,8 @@ class Bob:
         self.letter_box = letter_box
         self.letter = letter
 
-    def send_letter(self, destination, message, post_office):
+    @staticmethod
+    def send_letter(destination, message, post_office):
         letter = Letter(message, destination)
         Letter.write_letter(letter, message, destination)
         PostOffice.give_letter(post_office, letter)
